@@ -1,5 +1,7 @@
 # snot
 A simple chrome extension made to help you with pollen allergy (France)
+# Stuff that is not mine
+Icon is from DesignScience http://dscience.com/, found on https://www.iconfinder.com.
 # License
  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
                     Version 2, December 2004 

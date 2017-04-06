@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="popup.js"></script>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="tab">
+	<input type="radio" id="mapImageButton" name="tab" checked="checked">
+	<label for="mapImageButton">Carte</label>
+
+	<input type="radio" id="dataButton" name="tab">
+	<label for="dataButton">Données Interactives</label>
+    </div>
+
+    <div class="container">
+        <img src="http://ias.openhealth.fr/Portals/1/download/allergies/Openhealth_allergies_DernierCartogramme.jpg" alt="carte allergies" id="mapImage" class=""/>
+    
+        <div id="iframeContainer" class="hidden">
+	    <div id="spinnerOverlay">
+		<div id="spinner" class="" aria-hidden="true"></div>
+	    </div>
+            <iframe  width="100%" height="950px" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0"  scrolling="no" frameborder="0" id="dataFrame"></iframe>
+        </div>
+    </div>
+</body>
+</html>

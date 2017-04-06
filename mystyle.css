@@ -1,0 +1,111 @@
+.hidden {
+  display: none !important;
+}
+
+#mapImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#iframeContainer {
+  width: 100%;
+}
+
+
+body {
+  /*background-color: rgb(231, 236, 234);*/
+  overflow: hidden;
+  width: 450px;
+}
+button {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 500px;
+  padding: 5px;
+  border-left: 1px solid rgba(40, 44, 42, 0.0980392);
+  border-right: 1px solid rgba(40, 44, 42, 0.0980392);
+  border-bottom: 1px solid rgba(40, 44, 42, 0.0980392);
+}
+
+/* tabs */
+.tab {
+  border-collapse: collapse;
+  width: 100%;
+  display: table; 
+  box-shadow:  inset 0px -1px 0px 0px rgba(40, 44, 42, 0.0980392);
+}
+.tab * {
+  float: left;
+}
+.tab label {
+  border-right: 1px solid rgba(40, 44, 42, 0.0980392);
+  border-bottom: 1px solid rgba(40, 44, 42, 0.0980392);
+  border-top: 1px solid rgba(40, 44, 42, 0.0980392);
+  display: table-cell;
+  padding: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  color: #74777b;
+  
+  /* transition */
+  transition: color 0.2s linear;
+}
+.tab label:hover {
+  color: #168C69;
+}
+.tab input[type=radio]:checked+label{
+  border-bottom: 1px solid white;
+  border-top: 1px solid #168C69;
+  border-right: 1px solid rgba(40, 44, 42, 0.0980392);
+  box-shadow: inset 0 3px 0 #168C69;
+  color: #168C69;
+  background: none;
+}
+.tab input[type=radio]:first-child+label {
+  border-left: 1px solid rgba(40, 44, 42, 0.0980392);
+}
+.tab input[type=radio]:checked+label:last-child {
+  border-right: 1px solid rgba(40, 44, 42, 0.0980392);
+}
+.tab input[type=radio] {
+  display: none;
+}
+/* end tabs */
+
+/* spinner */
+#spinnerOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #168C69;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: auto;
+
+  animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {transform: rotate(0);}
+  to {transform: rotate(180deg);}
+}

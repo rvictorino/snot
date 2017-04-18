@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <title>Snot: Les donn&eacute;es des risques allergiques en un clic!</title>
     <script type="text/javascript" src="popup.js"></script>
     <link href="mystyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="tab">
+    <div class="tab" aria-hidden="true">
 	<input type="radio" id="mapImageButton" name="tab" checked="checked">
 	<label for="mapImageButton">Carte</label>
 
@@ -14,7 +15,7 @@
     </div>
 
     <div class="container">
-        <img src="http://ias.openhealth.fr/Portals/1/download/allergies/Openhealth_allergies_DernierCartogramme.jpg" alt="carte allergies" id="mapImage" class=""/>
+        <img alt="Dernier cartogramme Openhealth des manifestations allergiques en France" src="http://ias.openhealth.fr/Portals/1/download/allergies/Openhealth_allergies_DernierCartogramme.jpg" id="mapImage" class=""/>
     
         <div id="iframeContainer" class="hidden">
 	    <div id="spinnerOverlay">
